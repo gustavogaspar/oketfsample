@@ -1,7 +1,7 @@
 resource "oci_containerengine_cluster" "oke_cluster" {
   compartment_id     = var.compartment_ocid
   kubernetes_version = var.kube_version
-  name               = "oke-stix"
+  name               = "oke-cluster"
   vcn_id             =  var.vcn_id
 
   endpoint_config {

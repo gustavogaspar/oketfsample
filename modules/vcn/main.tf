@@ -3,8 +3,8 @@
 resource "oci_core_virtual_network" "oke_vcn" {
   cidr_block     = lookup(var.network_cidrs, "VCN-CIDR")
   compartment_id = var.compartment_ocid
-  display_name   = "oke-vcn-stix"
-  dns_label      = "okevcnstix"
+  display_name   = "oke-vcn"
+  dns_label      = "okevcn"
 }
 
 
